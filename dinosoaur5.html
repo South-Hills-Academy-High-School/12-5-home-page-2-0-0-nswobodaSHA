@@ -3,22 +3,19 @@
     <p><img src="https://i.pinimg.com/564x/cc/f3/e0/ccf3e0339d1131bcfe8e3d1e71d556dc.jpg"></p>
     <h2>The dinosaur asks you a question:</h2>
     <p>What is the first color of the rainbow?</p>
-    <p><input type="text" id="answer" value="type answer here"></p>
-    <p><button onclick="CheckAnswer()">Check Answer</button></p>
+    <p><input type="text" id="answer5" value="type answer here"></p>
+    <p><button onclick="CheckAnswer5()">Check Answer</button></p>
 
     <script>
-        function CheckAnswer() {
-            var answer = document.getElementById("answer").value
-            if(answer==="red") {
+        function CheckAnswer5() {
+            var answer5 = document.getElementById("answer5").value
+            if(answer5==="red") {
                 alert("correct answer!")
                 window.location.href="/dinosaur2.html"
             }
-            if(answer==="Red") {
+            if(answer5==="Red") {
                 alert("correct answer!")
                 window.location.href="/dinosaur2.html"
-            } else {
-                alert("Wrong!")
-                window.location.href="/dinosaureat.html"
             }
         }
     </script>

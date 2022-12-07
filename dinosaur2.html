@@ -1,0 +1,28 @@
+<html>
+    <p><img src="https://i.pinimg.com/564x/cc/f3/e0/ccf3e0339d1131bcfe8e3d1e71d556dc.jpg"></p>
+    <h2>The dinosaur asks you a second question:</h2>
+    <p>do you know Joe?</p>
+    <p><input type="text" id="answer2" value="type answer here"></p>
+    <p><button onclick="CheckAnswer2()">Check Answer</button></p>
+
+    <script>
+        function CheckAnswer2() {
+            var answer2 = document.getElementById("answer2").value
+            if(answer2==="Joe Mama") {
+                alert("correct answer!")
+                window.location.href="/dinosaur3.html"
+            }
+            if(answer2==="joe mama") {
+                alert("correct answer!")
+                window.location.href="/dinosaur3.html"
+            }
+            if(answer2==="JOE MAMA") {
+                alert("correct answer!")
+                window.location.href="/dinosaur3.html"
+            } else {
+                alert("Wrong!")
+                window.location.href="/dinosaureat.html"
+            }
+        }
+    </script>
+</html>

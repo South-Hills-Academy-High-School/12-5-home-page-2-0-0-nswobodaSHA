@@ -1,0 +1,25 @@
+<html>
+    <h1>You walked 10 miles and found a dinosaur!</h1>
+    <p><img src="https://i.pinimg.com/564x/cc/f3/e0/ccf3e0339d1131bcfe8e3d1e71d556dc.jpg"></p>
+    <h2>The dinosaur asks you third question:</h2>
+    <p>Who is the coding teacher?</p>
+    <p><input type="text" id="answer3" value="type answer here"></p>
+    <p><button onclick="CheckAnswer3()">Check Answer</button></p>
+
+    <script>
+        function CheckAnswer3() {
+            var answer3 = document.getElementById("answer3").value
+            if(answer3==="Mr Kao") {
+                alert("correct answer!")
+                window.location.href="/dinosaur4.html"
+            }
+            if(answer3==="Mr. Kao") {
+                alert("correct answer!")
+                window.location.href="/dinosaur4.html"
+            } else {
+                alert("Wrong!")
+                window.location.href="/dinosaureat.html"
+            }
+        }
+    </script>
+</html>
