@@ -2,20 +2,19 @@
     <h1>You walked 10 miles and found a dinosaur!</h1>
     <p><img src="https://i.pinimg.com/564x/cc/f3/e0/ccf3e0339d1131bcfe8e3d1e71d556dc.jpg"></p>
     <h2>The dinosaur asks you a question:</h2>
-    <p>What is the first color of the rainbow?</p>
+    <p>Playstation or Xbox?</p>
     <p><input type="text" id="answer5" value="type answer here"></p>
     <p><button onclick="CheckAnswer5()">Check Answer</button></p>
 
     <script>
         function CheckAnswer5() {
             var answer5 = document.getElementById("answer5").value
-            if(answer5==="red") {
+            if(answer5==="Playstation" || answer5==="playstation") {
                 alert("correct answer!")
                 window.location.href="/dinosaur2.html"
-            }
-            if(answer5==="Red") {
-                alert("correct answer!")
-                window.location.href="/dinosaur2.html"
+            }  else {
+                alert("Wrong!")
+                window.location.href="/dinosaureat.html"
             }
         }
     </script>

@@ -9,11 +9,7 @@
     <script>
         function CheckAnswer() {
             var answer = document.getElementById("answer").value
-            if(answer==="red") {
-                alert("correct answer!")
-                window.location.href="/dinosaur2.html"
-            }
-            if(answer==="Red") {
+            if(answer==="red" || answer==="Red") {
                 alert("correct answer!")
                 window.location.href="/dinosaur2.html"
             } else {
